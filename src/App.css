@@ -1,0 +1,224 @@
+.app {
+  min-height: 100vh;
+  padding: 48px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+
+.card {
+  width: 100%;
+  max-width: 760px;
+  padding: 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--surface-color);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.card h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.card p {
+  color: var(--muted-text-color);
+}
+
+.section-kicker {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.password-input-row {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0 24px;
+}
+
+.password-input-row input {
+  flex: 1;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--surface-color);
+  color: var(--text-color);
+}
+
+.password-input-row input:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-color: var(--primary-color);
+}
+
+.password-input-row button {
+  min-height: 48px;
+  padding: 12px 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.password-input-row button:hover {
+  opacity: 0.92;
+}
+
+.password-input-row button:active {
+  transform: translateY(1px);
+}
+
+.strength-section {
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: var(--surface-color);
+}
+
+.results-panel {
+  margin-top: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--surface-color);
+}
+
+.results-panel .strength-section {
+  margin-top: 0;
+  border: 0;
+  border-radius: 0 !important;
+}
+
+.results-panel .strength-section + .strength-section {
+  border-top: 1px solid var(--border-color);
+}
+
+.results-panel .validator-card {
+  background-color: var(--surface-color);
+}
+
+.strength-label {
+  margin: 0 0 12px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.strength-bar-background {
+  width: 100%;
+  height: 14px;
+  background-color: lightgray;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.strength-bar-fill {
+  height: 100%;
+}
+
+.criteria-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.criteria-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.criteria-list li:last-child {
+  border-bottom: 0;
+}
+
+.met {
+  color: var(--success-color);
+}
+
+.unmet {
+  color: var(--danger-color);
+}
+.validator-card {
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+}
+
+.section-copy {
+  color: var(--muted-text-color);
+}
+
+.status-text {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.strength-progress {
+  height: 14px;
+  background-color: lightgray;
+  border-radius: 999px;
+}
+
+.strength-progress .progress-bar {
+  transition: none;
+}
+
+.criteria-list li {
+  color: var(--text-color);
+  border-color: var(--border-color) !important;
+}
+
+.criteria-list li:last-child {
+  border-bottom: 0 !important;
+}
+.stat-box {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.stat-label {
+  margin-bottom: 0.4rem;
+  color: var(--muted-text-color);
+  letter-spacing: 0.08em;
+}
+
+.stat-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+
+
+
+@media (max-width: 640px) {
+  .card {
+    padding: 24px;
+  }
+
+  .password-input-row {
+    flex-direction: column;
+  }
+
+  .password-input-row button {
+    width: 100%;
+  }
+}
+
+.card h2,
+.card .h5,
+.strength-section h2,
+.strength-section .h5,
+.strength-section .strength-label {
+  color: var(--text-color) !important;
+}
+

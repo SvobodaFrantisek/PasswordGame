@@ -1,0 +1,60 @@
+:root {
+  --primary-color: blue;
+  --background-color: whitesmoke;
+  --surface-color: white;
+  --text-color: black;
+  --muted-text-color: dimgray;
+  --border-color: gray;
+  --success-color: green;
+  --warning-color: orange;
+  --danger-color: red;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: blue;
+    --background-color: black;
+    --surface-color: #1e1e1e;
+    --text-color: white;
+    --muted-text-color: lightgray;
+    --border-color: gray;
+    --success-color: green;
+    --warning-color: orange;
+    --danger-color: red;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
